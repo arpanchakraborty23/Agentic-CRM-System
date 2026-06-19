@@ -56,3 +56,46 @@ Run the server:
 ```bash
 uv run python server.py
 ```
+
+## MCP Client Configuration
+
+To use this server with an MCP client (e.g., opencode, Claude Desktop), add it to your client's MCP config:
+
+### opencode (`~/.config/opencode/opencode.json`)
+
+```json
+{
+  "mcpServers": {
+    "agentic-crm": {
+      "command": "uv",
+      "args": ["run", "--directory", "D:/GENAIProjects/Agentic-CRM-System/mcp", "python", "server.py"]
+    }
+  }
+}
+```
+
+### Claude Desktop (`claude_desktop_config.json`)
+
+```json
+{
+  "mcpServers": {
+    "agentic-crm": {
+      "command": "uv",
+      "args": ["run", "--directory", "D:/GENAIProjects/Agentic-CRM-System/mcp", "python", "server.py"]
+    }
+  }
+}
+```
+
+### VS Code (Cline / Continue)
+
+```json
+{
+  "mcpServers": {
+    "agentic-crm": {
+      "command": "uv",
+      "args": ["run", "--directory", "D:/GENAIProjects/Agentic-CRM-System/mcp", "python", "server.py"]
+    }
+  }
+}
+```

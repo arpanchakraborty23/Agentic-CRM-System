@@ -1,3 +1,4 @@
-from src.services.db import get_db
+from src.tools.crm_tools import mcp
 
-print(get_db)
+if __name__ == "__main__":
+    mcp.run()
